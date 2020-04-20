@@ -1,0 +1,115 @@
+{"arboretum":[
+ {
+   "id": 1,
+   "tree": "Sweet Gum",
+   "sciname": "Liquidambar styraciflua",
+   "latitude": 41.631837,
+   "longitude": -70.95185,
+   "website": ""
+ },
+ {
+   "id": 2,
+   "tree": "Buttonwood Sycamore",
+   "sciname": "Platanus occidentalis",
+   "latitude": 41.632108,
+   "longitude": -70.951743,
+   "website": "https://en.wikipedia.org/wiki/Platanus_occidentalis"
+ },
+ {
+   "id": 3,
+   "tree": "Weeping Beach",
+   "sciname": "Fagus sylvatica Pendula",
+   "latitude": 41.632093,
+   "longitude": -70.951542,
+   "website": "https://en.wikipedia.org/wiki/Weeping_beech"
+ },
+ {
+   "id": 4,
+   "tree": "Ginkgo",
+   "sciname": "Ginkgo biloba",
+   "latitude": 41.631989,
+   "longitude": -70.951569,
+   "website": "https://en.wikipedia.org/wiki/Ginkgo_biloba"
+ },
+ {
+   "id": 5,
+   "tree": "Camperdown Elm",
+   "sciname": "Ulmus glabra Camperdownii",
+   "latitude": 41.631992,
+   "longitude": -70.951294,
+   "website": "https://en.wikipedia.org/wiki/Ulmus_glabra_%27Camperdownii%27"
+ },
+ {
+   "id": 6,
+   "tree": "Silver Maple",
+   "sciname": "Acer saccharinum",
+   "latitude": 41.632075,
+   "longitude": -70.951329,
+   "website": "https://en.wikipedia.org/wiki/Acer_saccharinum"
+ },
+ {
+   "id": 7,
+   "tree": "Dawn Redwood",
+   "sciname": "Metasequoia",
+   "latitude": 41.632111,
+   "longitude": -70.951131,
+   "website": "https://en.wikipedia.org/wiki/Metasequoia"
+ },
+ {
+   "id": 8,
+   "tree": "Lacebark elm",
+   "sciname": "Ulmus parvifolia",
+   "latitude": 41.631973,
+   "longitude": -70.950916,
+   "website": "https://www.mortonarb.org/trees-plants/tree-plant-descriptions/lacebark-elm"
+ },
+ {
+   "id": 9,
+   "tree": "Franklinia tree",
+   "sciname": "Franklinia alatamaha",
+   "latitude": 41.631978,
+   "longitude": -70.950739,
+   "website": "https://www.arboretum.harvard.edu/tag/franklinia-alatamaha/"
+ },
+ {
+   "id": 10,
+   "tree": "Katsura tree",
+   "sciname": "Cercidiphyllum japonicum",
+   "latitude": 41.631931,
+   "longitude": -70.950687,
+   "website": "Cercidiphyllum_japonicum"
+ },
+ {
+   "id": 11,
+   "tree": "American Elm",
+   "sciname": "Ulmus americana",
+   "latitude": 41.632068,
+   "longitude": -70.950534,
+   "website": "http://hort.uconn.edu/detail.php?pid=512"
+ },
+ {
+   "id": 12,
+   "tree": "Fernleaf beech",
+   "sciname": "Fagus sylvatica Asplenifolia",
+   "latitude": 41.631839,
+   "longitude": -70.950467,
+   "website": "https://en.wikipedia.org/wiki/Fagus_sylvatica"
+ },
+ {
+   "id": 13,
+   "tree": "Sourwood",
+   "sciname": "Oxydendrum arboreum",
+   "latitude": 41.631748,
+   "longitude": -70.950927,
+   "website": "https://www.arborday.org/trees/treeguide/TreeDetail.cfm?ItemID=921"
+ },
+ {
+   "id": 14,
+   "tree": "Hardy Rubber Tree",
+   "sciname": "Eucommia ulmoides",
+   "latitude": 41.631943,
+   "longitude": -70.951094,
+   "website": "https://en.wikipedia.org/wiki/Eucommia_ulmoides"
+ }
+]
+}

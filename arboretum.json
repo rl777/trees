@@ -5,7 +5,7 @@
    "sciname": "Liquidambar styraciflua",
    "latitude": 41.631837,
    "longitude": -70.95185,
-   "website": ""
+   "website": "https://en.wikipedia.org/wiki/Liquidambar_styraciflua"
  },
  {
    "id": 2,
@@ -21,7 +21,7 @@
    "sciname": "Fagus sylvatica Pendula",
    "latitude": 41.632093,
    "longitude": -70.951542,
-   "website": "https://en.wikipedia.org/wiki/Weeping_beech"
+   "website": "en.wikipedia.org/wiki/Weeping_beech"
  },
  {
    "id": 4,

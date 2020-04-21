@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="..p5.min.js"></script>
+    <script src="../addons/p5.dom.min.js"></script>
+    <script src="../addons/p5.sound.min.js"></script>
+    <script src="trees.js"></script>
+
+
+   <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+
+
+
+
+
+
+
+  </head>
+  <body>
+
+
+<img src = "flogo1_sm_2016.jpg">
+      <h1>Buttonwood Park Arboretum</h1>
+<h3><a href="https://www.buttonwoodpark.org/arboretum">buttonwoodpark.org/arboretum</a></h3>
+<p>
+
+<!--- https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link  -->
+<form action="https://google.com">
+    <input type="submit" value="Go to Google" />
+</form>
+<p>
+
+<button type="button" onclick="document.write(5 + 20)">Try it</button>
+
+
+<p id="demo1">
+<p id="demo1A">
+<p id="demo2">
+
+<p id="demo3">
+<p id="demo3A">
+<p id="demo4">
+
+
+<script>
+
+var x;
+var text = '{"employees":[' +
+	'{"firstName":"John","lastName":"Doe" },' +
+	'{"firstName":"Anna","lastName":"Smith" },' +
+	'{"firstName":"Peter","lastName":"Jones" }]}';
+
+obj = JSON.parse(text);
+for (x in obj.employees) {
+	document.getElementById("demo1").innerHTML += "1. -----    " + obj.employees[1].firstName + " " + obj.employees[x].lastName + "<br>";
+}
+
+
+var q;
+var textQ = '{"employees":[ {"firstName":"John","lastName":"Doe" },{"firstName":"Anna","lastName":"Smith" }, {"firstName":"Peter","lastName":"Jones" }]}';
+
+objQ = JSON.parse(textQ);
+for (q in objQ.employees) {
+	document.getElementById("demo1A").innerHTML += "1. -----    " + objQ.employees[q].firstName + " " 	    + objQ.employees[q].lastName + "<br>";
+}
+
+
+//https://www.w3schools.com/js/js_json_stringify.asp 
+// "New text\xa02222!"
+// https://www.w3schools.com/js/js_htmldom.asp
+// loop through JSON - https://www.w3schools.com/js/js_json_objects.asp
+// js output https://www.w3schools.com/js/js_output.asp
+
+	obj2 = JSON.parse(text);
+	myJSON = JSON.stringify(obj2);
+	document.getElementById("demo2").innerHTML = "2. -----    " + myJSON;
+
+
+
+obj3 = JSON.parse(text);
+var myJSON = JSON.stringify(obj3);
+document.write("333 - " + myJSON);
+
+var obj4 = { name: "Susan", age: 40, city: "Boston" };
+var myJSON = JSON.stringify(obj4);
+document.getElementById("demo4").innerHTML = "4. -----    " + myJSON;
+
+</script>
+
+
+<p id="demo5">5. -----    </p>
+
+<script>
+//https://www.html5rocks.com/en/tutorials/file/dndfiles/ 
+//https://stackoverflow.com/questions/31274329/get-list-of-filenames-in-folder-with-javascript
+// Check for the various File API support.
+
+//alert('Alert Test.');
+if (window.File && window.FileReader && window.FileList && window.Blob) {
+        alert('The File APIs ARE fully supported in this browser.'); }
+else {alert('The File APIs are NOT fully supported in this browser.');}
+</script>
+
+local JSON read<br>
+
+<p>&nbsp;</p>
+<p>7. ============================</p>
+<p id="demo7">
+
+<p>&nbsp;</p>
+<p>9. ============================</p>
+<p id="demo9">
+
+
+<script>
+var text444 = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+
+obj = JSON.parse(text444);
+var y;
+for (y in obj.employees) {
+	document.getElementById("demo7").innerHTML += y + ". -----    = " + obj.employees[y].firstName + " " + obj.employees[y].lastName + "<br>";
+}
+</script>
+
+
+<script>
+//<script  src="trees.json">
+//https://stackoverflow.com/questions/23117722/does-innerhtml-overwrite-previous-entries
+
+var text222 = '{ "mytrees": [' + 
+    '{"tree":  "Fernleaf Beech", "sciname": "Fagus sylvatica","website": "https://en.wikipedia.org/wiki/Fagus_sylvatica" },' +
+   '{"tree":  "Dawn Redwood","sciname": "Metasequoia","website": "https://en.wikipedia.org/wiki/Metasequoia"},' +
+   '{"tree":  "old elm", "sciname": "omnes gallia","website": "https://cnn.com" }]}';
+
+treeobj = JSON.parse(text222);
+//var myJSON = JSON.stringify(treeobj);
+//document.getElementById("demo7").innerHTML("xxx - " + myJSON );
+
+var z;
+    for (z in treeobj.mytrees) {
+	document.getElementById("demo9").innerHTML +=  z + ":  " + treeobj.mytrees[z].tree + " --- " + treeobj.mytrees[z].sciname + " --- " + treeobj.mytrees[z].website + "<br>";
+}
+</script>
+
+<p>&nbsp;</p>
+<p>10. ============================</p>
+<p id="demo10">
+
+
+<script>
+var text44 = '{"arboretum": [' +
+	'{"id": 1,"tree": "Sweet Gum","sciname": "Liquidambar styraciflua","latitude": "41.631837","longitude": "-70.95185","website": "https://en.wikipedia.org/wiki/Liquidambar_styraciflua"},' +
+	'{"id": 2,"tree": "Buttonwood Sycamore","sciname": "Platanus occidentalis","latitude": 41.632108,"longitude": -70.951743,"website": "https://en.wikipedia.org/wiki/Platanus_occidentalis" },' +
+	'{"id": 3,"tree": "Weeping Beach","sciname": "Fagus sylvatica \'Pendula\'","latitude": 41.632093,"longitude": -70.951542,"website": "https://en.wikipedia.org/wiki/Weeping_beech"},' +
+	'{"id": 4,"tree": "Ginkgo","sciname": "Ginkgo biloba","latitude": 41.631989,"longitude": -70.951569,"website": "https://en.wikipedia.org/wiki/Ginkgo_biloba" }]}'; 
+ 
+aboobj = JSON.parse(text44);
+
+var w;
+    for (w in aboobj.arboretum) {
+	document.getElementById("demo10").innerHTML +=  w + ":999  " + aboobj.arboretum[w].tree + " --- " + aboobj.arboretum[w].sciname + " --- " + aboobj.arboretum[w].latitude + "<br>";
+}
+
+document.getElementById("demo10").innerHTML +=  "<p>88" + aboobj.arboretum[0].tree;
+</script>
+
+
+<p>11. ============================</p>
+<p id="demo11">
+
+
+<p>12. ============================</p>
+<p id="demo12">
+      <header>
+	HEADER
+      </header>
+
+<p>13. ============================</p>
+<p id="demo13">
+
+
+      <section>
+	SECTION
+      </section>
+
+
+
+
+
+ <script>
+const header = document.querySelector('header');
+const section = document.querySelector('section');
+
+document.getElementById("demo11").innerHTML = "Getting JSON from remote server" + " ----- ";
+
+//let requestURL = 'https://www.newbedford.com/buttonwood1/arboretum/arboretum.json';
+//let requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+let requestURL = 'https://raw.githubusercontent.com/rl777/trees/master/arboretum.json';
+
+
+let request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+
+document.getElementById("demo11").innerHTML += requestURL + "<br>";
+    
+request.onload = function() {
+document.getElementById("demo11").innerHTML += "json received" + "<br>";
+const superHeroes = request.response;
+
+//const superHeroes = JSON.parse(superHeroes);
+
+document.getElementById("demo11").innerHTML += "<h4>" +   superHeroes.arboretum[1].tree + "</h4>";
+document.getElementById("demo11").innerHTML +="----- " +  superHeroes.arboretum[1].sciname + "<br>";
+document.getElementById("demo11").innerHTML += "----- " +   superHeroes.arboretum[1].website + "<br>";
+//<a id="myAnchor" href="http://www.microsoft.com">Microsoft</a>
+
+document.getElementById("demo11").innerHTML += "----- " +   "<a href=\""+ superHeroes.arboretum[1].website + "\">"  + "URL"  +  "</a>" + "<br>";
+document.getElementById("demo11").innerHTML += "----- " +   "<a href=\""+ superHeroes.arboretum[1].website + "\">"  + superHeroes.arboretum[1].website  +  "</a>" + "<br>";
+
+document.getElementById("demo11").innerHTML += "----- " +   "<a href=\"https://" + superHeroes.arboretum[2].website + "\">"  + superHeroes.arboretum[2].website  +  "</a>" + "<br>";
+
+document.getElementById("demo11").innerHTML +="----- " +   "<a href=\"https://" + superHeroes.arboretum[2].website + "\">"  + superHeroes.arboretum[2].website  +  "</a>" + "<br>";
+
+populateHeader(superHeroes);
+showHeroes(superHeroes);
+}
+
+
+function populateHeader(jsonObj) {
+	document.getElementById("demo12").innerHTML += "OOOOOOOOO <br>";
+
+      	const myH1 = document.createElement('p');
+     	myH1.textContent = jsonObj['arboretum'][1].tree ;
+      	header.appendChild(myH1);
+
+                  //var t = document.createTextNode("Hello World");
+	//header.appendChild(t);
+
+	const x12 = document.createElement('p');
+	x12.textContent = 'ffffff';
+	header.appendChild(x12);
+
+
+
+     	myH1.textContent += jsonObj['arboretum'][1].sciname;
+      	header.appendChild(myH1);
+     	myH1.textContent += jsonObj['arboretum'][1].website;
+      	header.appendChild(myH1);
+
+
+
+      	const myPara = document.createElement('p');
+      	myPara.textContent = 'latitude: ' + jsonObj['arboretum'][0].latitude + '  /   longitude: ' + jsonObj['arboretum'][0].longitude;
+      	header.appendChild(myPara);
+
+	document.getElementById("demo12").innerHTML += "PPPPPP<br>";
+
+	const x13 = document.createElement('p');
+	x13.textContent = 'eeeeeeee';
+	header.appendChild(x13);
+    }
+
+//document.getElementById("demo12").innerHTML += "QQQQQQQQ" + "<br>";
+
+function showHeroes(jsonObj) {
+      document.getElementById("demo13").innerHTML += "SSSSSSSSSS <br>";
+
+const allTrees = jsonObj['arboretum'];
+
+      for(let i = 0; i < allTrees.length; i++) {
+      //document.getElementById("demo13").innerHTML += allTrees.length + "  length <br>";
+      document.getElementById("demo13").innerHTML += allTrees[i].tree  + "<br>";
+
+//====================
+
+        const myArticle = document.createElement('article');
+       // const myH2 = document.createElement('h2');
+        const myH3 = document.createElement('h3');
+        const myPara1 = document.createElement('p');
+        const myPara2 = document.createElement('p');
+        const myPara3 = document.createElement('p');
+        const myList = document.createElement('ul');
+
+        myH3.textContent = 'Tree: ' + allTrees[i].tree;
+        myPara1.textContent = 'Tree: ' + allTrees[i].tree;
+
+
+
+
+        myH3.textContent = 'Tree: ' + allTrees[i].tree;
+        //myPara1.textContent = 'Tree: ' + allTrees[i].tree;
+        //myPara2.textContent = 'Sciname: ' + allTrees[i].sciname;
+        //myPara3.textContent = 'Website: ' +  allTrees[i].website;
+        myPara1.textContent = 'Tree: ' +  allTrees[i].tree ;
+        myPara2.textContent = 'Sciname: ' + allTrees[i].sciname;
+        myPara3.textContent = 'Website: ' + allTrees[i].website;
+
+/*
+
+        const listItem = document.createElement('li');
+        listItem.textContent = 'Sciname: ' + allTrees[i].sciname;
+        myList.appendChild(listItem);
+        const listItem = document.createElement('li');
+        listItem.textContent = 'Sciname: ' + allTrees[i].website;
+        myList.appendChild(listItem);
+
+//
+        const superPowers = allTrees[i].latitude;
+        for(let j = 0; j < superPowers.length; j++) {
+          const listItem = document.createElement('li');
+          listItem.textContent = superPowers[j];
+          myList.appendChild(listItem);
+        }
+
+//
+*/
+        myArticle.appendChild(myH3);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara3);
+        myArticle.appendChild(myList);
+
+        section.appendChild(myArticle);
+//====================
+
+
+      }
+
+
+
+    }
+
+  var t = document.createTextNode("Hello Planet");
+  document.body.appendChild(t);
+
+</script>
+
+<p>15. ============================</p>
+<p id="demo15">
+
+//https://developers.google.com/maps/documentation/javascript/examples/map-simple 
+//AIzaSyC20Tl1w0Grzl47L5ruhAak0MnTayjc9DI
+//https://console.cloud.google.com/google/maps-apis/overview?pli=1&project=hidden-terrain-244301&folder=&organizationId= 
+
+// 41.631989,"longitude": -70.951569,
+
+ <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 41.631989, lng: -70.951569},
+          zoom: 16
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC20Tl1w0Grzl47L5ruhAak0MnTayjc9DI&callback=initMap"
+    async defer></script>
+
+
+------END
+</body>
+</html>
